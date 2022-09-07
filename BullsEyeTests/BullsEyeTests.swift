@@ -12,23 +12,14 @@ import XCTest
 class BullsEyeTests: XCTestCase {
     
     var sut: GameViewController!
-    let slider = UISlider()
-    let roundLabel = UILabel()
-    let scoreLabel = UILabel()
-    let targetLabel = UILabel()
 
     override func setUpWithError() throws {
         try super.setUpWithError()
-        sut = GameViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateInitialViewController() as? GameViewController
+        _ = sut.view
+        
         sut.gameController = MockBullsEyeGame()
-       
-        slider.value = 1
-        sut.slider = slider
-        
-        
-        sut.roundLabel = roundLabel
-        sut.scoreLabel = scoreLabel
-        sut.targetLabel = targetLabel
     }
 
     override func tearDownWithError() throws {
@@ -54,13 +45,13 @@ class BullsEyeTests: XCTestCase {
     }
     
     func testShouldCheckGuessAndDisplayAlert(){
-      
+        sut.slider.value = 20.0
         let downcastedController = sut.gameController as! MockBullsEyeGame
         downcastedController.checkAndUpdateScoreMethodSideEffect = (title:"Test Title",message:"Test Message")
         
         sut.showAlert()
             
-        XCTAssert(downcastedController.checkAndUpdateScoreMethodCalls[0] == [1])
+        XCTAssert(downcastedController.checkAndUpdateScoreMethodCalls[0] == [20])
     }
     
 
