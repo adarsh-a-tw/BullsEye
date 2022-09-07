@@ -16,7 +16,7 @@ class MockBullsEyeGame: Game {
     var startNewGameMethodCalls:Int = 0
     var startNewRoundMethodCalls:Int = 0
     var checkAndUpdateScoreMethodCalls:[[Int]] = []
-    var checkAndUpdateScoreMethodSideEffect:(title: String, message: String)? = nil
+    var checkAndUpdateScoreMethodReturnValue:(title: String, message: String)? = nil
     
     func startNewGame() {
         startNewGameMethodCalls += 1
@@ -29,7 +29,7 @@ class MockBullsEyeGame: Game {
     func checkAndUpdateScore(guess: Int) -> (title: String, message: String) {
         checkAndUpdateScoreMethodCalls.append([guess])
         
-        if let returnValue = checkAndUpdateScoreMethodSideEffect{
+        if let returnValue = checkAndUpdateScoreMethodReturnValue{
             return returnValue
         }
         return (title:"",message:"")

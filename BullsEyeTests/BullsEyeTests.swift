@@ -45,13 +45,14 @@ class BullsEyeTests: XCTestCase {
     }
     
     func testShouldCheckGuessAndDisplayAlert(){
-        sut.slider.value = 20.0
+        let guessValue = 20
+        sut.slider.value = Float(guessValue)
         let downcastedController = sut.gameController as! MockBullsEyeGame
-        downcastedController.checkAndUpdateScoreMethodSideEffect = (title:"Test Title",message:"Test Message")
+        downcastedController.checkAndUpdateScoreMethodReturnValue = (title:"Test Title",message:"Test Message")
         
         sut.handleHitMeButtonClick()
             
-        XCTAssert(downcastedController.checkAndUpdateScoreMethodCalls[0] == [20])
+        XCTAssert(downcastedController.checkAndUpdateScoreMethodCalls[0].first == guessValue)
     }
     
 
