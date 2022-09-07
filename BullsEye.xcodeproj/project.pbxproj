@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C781B01128C8C7EC0049B885 /* IntegerGeneratorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781B01028C8C7EC0049B885 /* IntegerGeneratorStub.swift */; };
+		C781B01328C8C8420049B885 /* IntegerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781B01228C8C8420049B885 /* IntegerGenerator.swift */; };
+		C781B01528C8C8650049B885 /* DefaultIntegerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781B01428C8C8650049B885 /* DefaultIntegerGenerator.swift */; };
 		C78642FC28C5D30800345F94 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78642FB28C5D30800345F94 /* Game.swift */; };
 		C78643BB28C875F700345F94 /* MockBullsEyeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78642F928C5D2E900345F94 /* MockBullsEyeGame.swift */; };
 		C78643C028C8792B00345F94 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = C78643BF28C877C400345F94 /* BullsEye.html */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C781B01028C8C7EC0049B885 /* IntegerGeneratorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerGeneratorStub.swift; sourceTree = "<group>"; };
+		C781B01228C8C8420049B885 /* IntegerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerGenerator.swift; sourceTree = "<group>"; };
+		C781B01428C8C8650049B885 /* DefaultIntegerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIntegerGenerator.swift; sourceTree = "<group>"; };
 		C78642F928C5D2E900345F94 /* MockBullsEyeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBullsEyeGame.swift; sourceTree = "<group>"; };
 		C78642FB28C5D30800345F94 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C78643BF28C877C400345F94 /* BullsEye.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
@@ -104,6 +110,8 @@
 			children = (
 				C7B8E59228C5AE8F0089BE7C /* BullsEyeGame.swift */,
 				C78642FB28C5D30800345F94 /* Game.swift */,
+				C781B01228C8C8420049B885 /* IntegerGenerator.swift */,
+				C781B01428C8C8650049B885 /* DefaultIntegerGenerator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B8E59A28C5AFA70089BE7C /* BullsEyeGameTests.swift */,
+				C781B01028C8C7EC0049B885 /* IntegerGeneratorStub.swift */,
 			);
 			path = BullsEyeGameTests;
 			sourceTree = "<group>";
@@ -316,6 +325,8 @@
 				C7B8E48028C0AF040089BE7C /* AboutViewController.swift in Sources */,
 				C78642FC28C5D30800345F94 /* Game.swift in Sources */,
 				C7A64E4828BF88A90066CDB1 /* SceneDelegate.swift in Sources */,
+				C781B01328C8C8420049B885 /* IntegerGenerator.swift in Sources */,
+				C781B01528C8C8650049B885 /* DefaultIntegerGenerator.swift in Sources */,
 				C7B8E48228C0E0970089BE7C /* AuthorDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C781B01128C8C7EC0049B885 /* IntegerGeneratorStub.swift in Sources */,
 				C7B8E59B28C5AFA70089BE7C /* BullsEyeGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

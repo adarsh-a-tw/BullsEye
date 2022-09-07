@@ -13,6 +13,7 @@ class BullsEyeGame: Game {
     var score:Int = 0
     var round:Int = 0
     var targetValue:Int = 50
+    var integerGenerator: IntegerGenerator = DefaultRandomIntegerGenerator()
     
     func startNewGame(){
         score = 0

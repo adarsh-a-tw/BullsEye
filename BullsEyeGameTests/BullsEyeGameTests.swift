@@ -26,6 +26,7 @@ class BullsEyeGameTests: XCTestCase {
     func testStartNewGame() {
         let initialTarget = sut.targetValue
         
+        sut.integerGenerator = IntegerGeneratorStub() as IntegerGenerator
         sut.startNewGame()
         
         XCTAssert(sut.round == 1)
@@ -37,6 +38,7 @@ class BullsEyeGameTests: XCTestCase {
         let initialTarget = sut.targetValue
         let initialRound = sut.round
         
+        sut.integerGenerator = IntegerGeneratorStub() as IntegerGenerator
         sut.startNewRound()
         
         XCTAssert(initialTarget != sut.targetValue)
