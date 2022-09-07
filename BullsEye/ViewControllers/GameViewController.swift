@@ -29,16 +29,12 @@ class GameViewController: UIViewController {
         setSliderTrackImages()
     }
     
-    @IBAction func showAlert() {
+    @IBAction func handleHitMeButtonClick() {
         let guessValue = Int(slider.value.rounded())
         
         let result = gameController.checkAndUpdateScore(guess: guessValue)
         
-        let alert = UIAlertController(title: result.title, message: result.message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Ok", style: .default, handler:{(action:UIAlertAction)->Void in self.startNewRound()})
-        alert.addAction(action)
-        
-        present(alert, animated: true, completion: nil)
+        showAlert(result)
     }
     
     @IBAction func startNewGame() {
@@ -73,6 +69,15 @@ class GameViewController: UIViewController {
         slider.setMinimumTrackImage(minimumTrackImage, for: .normal)
         slider.setMaximumTrackImage(maximumTrackImage, for: .normal)
         slider.value = 50
+    }
+    
+    private func showAlert(_ result:(title:String, message:String)) {
+        
+        let alert = UIAlertController(title: result.title, message: result.message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler:{(action:UIAlertAction)->Void in self.startNewRound()})
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
     
 }

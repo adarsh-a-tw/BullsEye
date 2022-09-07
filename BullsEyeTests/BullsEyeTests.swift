@@ -49,7 +49,7 @@ class BullsEyeTests: XCTestCase {
         let downcastedController = sut.gameController as! MockBullsEyeGame
         downcastedController.checkAndUpdateScoreMethodSideEffect = (title:"Test Title",message:"Test Message")
         
-        sut.showAlert()
+        sut.handleHitMeButtonClick()
             
         XCTAssert(downcastedController.checkAndUpdateScoreMethodCalls[0] == [20])
     }

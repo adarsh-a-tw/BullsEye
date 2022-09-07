@@ -98,7 +98,7 @@
                                         </state>
                                         <state key="highlighted" backgroundImage="Button-Highlighted"/>
                                         <connections>
-                                            <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqG-vc-6EX"/>
+                                            <action selector="handleHitMeButtonClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="fT6-GI-JXK"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WM-GD-8V5">
@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-278.87323943661971" y="-365.625"/>
+            <point key="canvasLocation" x="-279.61956521739131" y="-366.66666666666669"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="bA7-I9-CrR">
