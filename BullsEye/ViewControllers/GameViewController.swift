@@ -34,7 +34,7 @@ class GameViewController: UIViewController {
         
         let result = gameController.checkAndUpdateScore(guess: guessValue)
         
-        showAlert(result){
+        showAlert(title: result.title, message: result.message){
             self.startNewRound()
         }
     }
@@ -73,9 +73,9 @@ class GameViewController: UIViewController {
         slider.value = 50
     }
     
-    private func showAlert(_ result:(title:String, message:String), onClickHandler: @escaping () -> Void) {
+    private func showAlert(title:String, message:String, onClickHandler: @escaping () -> Void) {
         
-        let alert = UIAlertController(title: result.title, message: result.message, preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .default, handler: {
             (action:UIAlertAction)->Void in onClickHandler()
         })
