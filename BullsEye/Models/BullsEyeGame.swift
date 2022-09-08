@@ -23,7 +23,7 @@ class BullsEyeGame: Game {
     
     func startNewRound(){
         round += 1
-        targetValue = Int.random(in: 1...100)
+        targetValue = integerGenerator.generate()
     }
     
     
