@@ -12,6 +12,7 @@ import XCTest
 class BullsEyeTests: XCTestCase {
     
     var sut: GameViewController!
+    var downcastedController: MockBullsEyeGameController!
 
     override func setUpWithError() throws {
         try super.setUpWithError()
@@ -19,35 +20,39 @@ class BullsEyeTests: XCTestCase {
         sut = storyboard.instantiateInitialViewController() as? GameViewController
         _ = sut.view
         
-        sut.gameController = MockBullsEyeGame()
+        sut.gameController = MockBullsEyeGameController()
+        downcastedController = sut.gameController as? MockBullsEyeGameController
     }
 
     override func tearDownWithError() throws {
         try super.tearDownWithError()
         sut.gameController = nil
         sut = nil
+        downcastedController = nil
     }
 
     func testShouldStartNewGame() throws {
+        downcastedController.getgameStatsReturnValue = [.score:0, .round:1,.targetValue:50]
+        
         sut.startNewGame()
         
-        let downcastedController = sut.gameController as! MockBullsEyeGame
         XCTAssert(downcastedController.startNewGameMethodCalls == 1)
-       
+        XCTAssert(downcastedController.getgameStatsMethodCalls == 1)
     }
     
     func testShouldStartNewRound() {
+        downcastedController.getgameStatsReturnValue = [.score:0, .round:1,.targetValue:50]
         
         sut.startNewRound()
         
-        let downcastedController = sut.gameController as! MockBullsEyeGame
         XCTAssert(downcastedController.startNewRoundMethodCalls == 1)
+        XCTAssert(downcastedController.getgameStatsMethodCalls == 1)
     }
     
     func testShouldCheckGuessAndDisplayAlert(){
         let guessValue = 20
         sut.slider.value = Float(guessValue)
-        let downcastedController = sut.gameController as! MockBullsEyeGame
+        
         downcastedController.checkAndUpdateScoreMethodReturnValue = (title:"Test Title",message:"Test Message")
         
         sut.handleHitMeButtonClick()

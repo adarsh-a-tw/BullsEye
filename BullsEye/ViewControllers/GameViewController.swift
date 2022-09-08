@@ -9,7 +9,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var gameController: Game!
+    var gameController: GameController!
     
     @IBOutlet weak var slider:UISlider!
     @IBOutlet weak var targetLabel:UILabel!
@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gameController = BullsEyeGame()
+        gameController = BullsEyeGameController()
         startNewGame()
         setSliderImage()
         setSliderTrackImages()
@@ -51,9 +51,10 @@ class GameViewController: UIViewController {
     }
     
     private func updateLabels() {
-        targetLabel.text = String(gameController.targetValue)
-        roundLabel.text = String(gameController.round)
-        scoreLabel.text = String(gameController.score)
+        let gameStats = gameController.getGameStats()
+        targetLabel.text = String(gameStats[.targetValue]!)
+        roundLabel.text = String(gameStats[.round]!)
+        scoreLabel.text = String(gameStats[.score]!)
     }
     
     private func setSliderImage() {

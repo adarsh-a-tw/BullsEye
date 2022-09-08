@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C781B01128C8C7EC0049B885 /* IntegerGeneratorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781B01028C8C7EC0049B885 /* IntegerGeneratorStub.swift */; };
 		C781B01328C8C8420049B885 /* IntegerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781B01228C8C8420049B885 /* IntegerGenerator.swift */; };
 		C781B01528C8C8650049B885 /* DefaultIntegerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781B01428C8C8650049B885 /* DefaultIntegerGenerator.swift */; };
-		C78642FC28C5D30800345F94 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78642FB28C5D30800345F94 /* Game.swift */; };
 		C78643BB28C875F700345F94 /* MockBullsEyeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78642F928C5D2E900345F94 /* MockBullsEyeGame.swift */; };
 		C78643C028C8792B00345F94 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = C78643BF28C877C400345F94 /* BullsEye.html */; };
 		C7A64E4628BF88A90066CDB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A64E4528BF88A90066CDB1 /* AppDelegate.swift */; };
@@ -19,16 +17,20 @@
 		C7A64E4D28BF88A90066CDB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A64E4B28BF88A90066CDB1 /* Main.storyboard */; };
 		C7A64E4F28BF88AA0066CDB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A64E4E28BF88AA0066CDB1 /* Assets.xcassets */; };
 		C7A64E5228BF88AA0066CDB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A64E5028BF88AA0066CDB1 /* LaunchScreen.storyboard */; };
+		C7B8D20028C9BDA600A11174 /* BullsEyeGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8D1FF28C9BDA600A11174 /* BullsEyeGameController.swift */; };
+		C7B8D20428C9D77600A11174 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8D20328C9D77600A11174 /* GameController.swift */; };
+		C7B8D20C28C9D7CB00A11174 /* BullsEyeGameControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8D20B28C9D7CB00A11174 /* BullsEyeGameControllerTests.swift */; };
+		C7B8D21228C9D84300A11174 /* IntegerGeneratorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781B01028C8C7EC0049B885 /* IntegerGeneratorStub.swift */; };
+		C7B8D21428C9DA1800A11174 /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8D21328C9DA1800A11174 /* GameStats.swift */; };
 		C7B8E48028C0AF040089BE7C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8E47F28C0AF040089BE7C /* AboutViewController.swift */; };
 		C7B8E48228C0E0970089BE7C /* AuthorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8E48128C0E0970089BE7C /* AuthorDetailsViewController.swift */; };
 		C7B8E48728C121010089BE7C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B8E48628C121010089BE7C /* WebKit.framework */; };
 		C7B8E59328C5AE8F0089BE7C /* BullsEyeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8E59228C5AE8F0089BE7C /* BullsEyeGame.swift */; };
-		C7B8E59B28C5AFA70089BE7C /* BullsEyeGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8E59A28C5AFA70089BE7C /* BullsEyeGameTests.swift */; };
 		C7B8E5A828C5B8F60089BE7C /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8E5A728C5B8F60089BE7C /* BullsEyeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C7B8E59C28C5AFA70089BE7C /* PBXContainerItemProxy */ = {
+		C7B8D20D28C9D7CB00A11174 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C7A64E3A28BF88A90066CDB1 /* Project object */;
 			proxyType = 1;
@@ -49,7 +51,6 @@
 		C781B01228C8C8420049B885 /* IntegerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerGenerator.swift; sourceTree = "<group>"; };
 		C781B01428C8C8650049B885 /* DefaultIntegerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIntegerGenerator.swift; sourceTree = "<group>"; };
 		C78642F928C5D2E900345F94 /* MockBullsEyeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBullsEyeGame.swift; sourceTree = "<group>"; };
-		C78642FB28C5D30800345F94 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C78643BF28C877C400345F94 /* BullsEye.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		C7A64E4228BF88A90066CDB1 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A64E4528BF88A90066CDB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,12 +60,15 @@
 		C7A64E4E28BF88AA0066CDB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A64E5128BF88AA0066CDB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7A64E5328BF88AA0066CDB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B8D1FF28C9BDA600A11174 /* BullsEyeGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeGameController.swift; sourceTree = "<group>"; };
+		C7B8D20328C9D77600A11174 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		C7B8D20928C9D7CB00A11174 /* BullsEyeGameControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeGameControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B8D20B28C9D7CB00A11174 /* BullsEyeGameControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeGameControllerTests.swift; sourceTree = "<group>"; };
+		C7B8D21328C9DA1800A11174 /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
 		C7B8E47F28C0AF040089BE7C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C7B8E48128C0E0970089BE7C /* AuthorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDetailsViewController.swift; sourceTree = "<group>"; };
 		C7B8E48628C121010089BE7C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C7B8E59228C5AE8F0089BE7C /* BullsEyeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeGame.swift; sourceTree = "<group>"; };
-		C7B8E59828C5AFA70089BE7C /* BullsEyeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7B8E59A28C5AFA70089BE7C /* BullsEyeGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeGameTests.swift; sourceTree = "<group>"; };
 		C7B8E5A528C5B8F60089BE7C /* BullsEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B8E5A728C5B8F60089BE7C /* BullsEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +82,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7B8E59528C5AFA70089BE7C /* Frameworks */ = {
+		C7B8D20628C9D7CB00A11174 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -109,9 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				C7B8E59228C5AE8F0089BE7C /* BullsEyeGame.swift */,
-				C78642FB28C5D30800345F94 /* Game.swift */,
 				C781B01228C8C8420049B885 /* IntegerGenerator.swift */,
 				C781B01428C8C8650049B885 /* DefaultIntegerGenerator.swift */,
+				C7B8D21328C9DA1800A11174 /* GameStats.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				C7A64E4428BF88A90066CDB1 /* BullsEye */,
-				C7B8E59928C5AFA70089BE7C /* BullsEyeGameTests */,
 				C7B8E5A628C5B8F60089BE7C /* BullsEyeTests */,
+				C7B8D20A28C9D7CB00A11174 /* BullsEyeGameControllerTests */,
 				C7A64E4328BF88A90066CDB1 /* Products */,
 				C7B8E48528C121010089BE7C /* Frameworks */,
 			);
@@ -139,8 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				C7A64E4228BF88A90066CDB1 /* BullsEye.app */,
-				C7B8E59828C5AFA70089BE7C /* BullsEyeGameTests.xctest */,
 				C7B8E5A528C5B8F60089BE7C /* BullsEyeTests.xctest */,
+				C7B8D20928C9D7CB00A11174 /* BullsEyeGameControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 		C7A64E4428BF88A90066CDB1 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				C7B8D1FE28C9BD7C00A11174 /* Controllers */,
 				C78643BE28C877BD00345F94 /* Resources */,
 				C78643BD28C8772B00345F94 /* Models */,
 				C78643BC28C876A400345F94 /* ViewControllers */,
@@ -161,21 +166,30 @@
 			path = BullsEye;
 			sourceTree = "<group>";
 		};
+		C7B8D1FE28C9BD7C00A11174 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8D1FF28C9BDA600A11174 /* BullsEyeGameController.swift */,
+				C7B8D20328C9D77600A11174 /* GameController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C7B8D20A28C9D7CB00A11174 /* BullsEyeGameControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C781B01028C8C7EC0049B885 /* IntegerGeneratorStub.swift */,
+				C7B8D20B28C9D7CB00A11174 /* BullsEyeGameControllerTests.swift */,
+			);
+			path = BullsEyeGameControllerTests;
+			sourceTree = "<group>";
+		};
 		C7B8E48528C121010089BE7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C7B8E48628C121010089BE7C /* WebKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C7B8E59928C5AFA70089BE7C /* BullsEyeGameTests */ = {
-			isa = PBXGroup;
-			children = (
-				C7B8E59A28C5AFA70089BE7C /* BullsEyeGameTests.swift */,
-				C781B01028C8C7EC0049B885 /* IntegerGeneratorStub.swift */,
-			);
-			path = BullsEyeGameTests;
 			sourceTree = "<group>";
 		};
 		C7B8E5A628C5B8F60089BE7C /* BullsEyeTests */ = {
@@ -207,22 +221,22 @@
 			productReference = C7A64E4228BF88A90066CDB1 /* BullsEye.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C7B8E59728C5AFA70089BE7C /* BullsEyeGameTests */ = {
+		C7B8D20828C9D7CB00A11174 /* BullsEyeGameControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7B8E59E28C5AFA70089BE7C /* Build configuration list for PBXNativeTarget "BullsEyeGameTests" */;
+			buildConfigurationList = C7B8D20F28C9D7CB00A11174 /* Build configuration list for PBXNativeTarget "BullsEyeGameControllerTests" */;
 			buildPhases = (
-				C7B8E59428C5AFA70089BE7C /* Sources */,
-				C7B8E59528C5AFA70089BE7C /* Frameworks */,
-				C7B8E59628C5AFA70089BE7C /* Resources */,
+				C7B8D20528C9D7CB00A11174 /* Sources */,
+				C7B8D20628C9D7CB00A11174 /* Frameworks */,
+				C7B8D20728C9D7CB00A11174 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C7B8E59D28C5AFA70089BE7C /* PBXTargetDependency */,
+				C7B8D20E28C9D7CB00A11174 /* PBXTargetDependency */,
 			);
-			name = BullsEyeGameTests;
-			productName = BullsEyeGameTests;
-			productReference = C7B8E59828C5AFA70089BE7C /* BullsEyeGameTests.xctest */;
+			name = BullsEyeGameControllerTests;
+			productName = BullsEyeGameControllerTests;
+			productReference = C7B8D20928C9D7CB00A11174 /* BullsEyeGameControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		C7B8E5A428C5B8F60089BE7C /* BullsEyeTests */ = {
@@ -256,7 +270,7 @@
 					C7A64E4128BF88A90066CDB1 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
-					C7B8E59728C5AFA70089BE7C = {
+					C7B8D20828C9D7CB00A11174 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = C7A64E4128BF88A90066CDB1;
 					};
@@ -280,8 +294,8 @@
 			projectRoot = "";
 			targets = (
 				C7A64E4128BF88A90066CDB1 /* BullsEye */,
-				C7B8E59728C5AFA70089BE7C /* BullsEyeGameTests */,
 				C7B8E5A428C5B8F60089BE7C /* BullsEyeTests */,
+				C7B8D20828C9D7CB00A11174 /* BullsEyeGameControllerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7B8E59628C5AFA70089BE7C /* Resources */ = {
+		C7B8D20728C9D7CB00A11174 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,23 +334,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A64E4A28BF88A90066CDB1 /* GameViewController.swift in Sources */,
+				C7B8D20028C9BDA600A11174 /* BullsEyeGameController.swift in Sources */,
 				C7A64E4628BF88A90066CDB1 /* AppDelegate.swift in Sources */,
 				C7B8E59328C5AE8F0089BE7C /* BullsEyeGame.swift in Sources */,
 				C7B8E48028C0AF040089BE7C /* AboutViewController.swift in Sources */,
-				C78642FC28C5D30800345F94 /* Game.swift in Sources */,
 				C7A64E4828BF88A90066CDB1 /* SceneDelegate.swift in Sources */,
 				C781B01328C8C8420049B885 /* IntegerGenerator.swift in Sources */,
+				C7B8D20428C9D77600A11174 /* GameController.swift in Sources */,
 				C781B01528C8C8650049B885 /* DefaultIntegerGenerator.swift in Sources */,
 				C7B8E48228C0E0970089BE7C /* AuthorDetailsViewController.swift in Sources */,
+				C7B8D21428C9DA1800A11174 /* GameStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7B8E59428C5AFA70089BE7C /* Sources */ = {
+		C7B8D20528C9D7CB00A11174 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C781B01128C8C7EC0049B885 /* IntegerGeneratorStub.swift in Sources */,
-				C7B8E59B28C5AFA70089BE7C /* BullsEyeGameTests.swift in Sources */,
+				C7B8D21228C9D84300A11174 /* IntegerGeneratorStub.swift in Sources */,
+				C7B8D20C28C9D7CB00A11174 /* BullsEyeGameControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,10 +368,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C7B8E59D28C5AFA70089BE7C /* PBXTargetDependency */ = {
+		C7B8D20E28C9D7CB00A11174 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C7A64E4128BF88A90066CDB1 /* BullsEye */;
-			targetProxy = C7B8E59C28C5AFA70089BE7C /* PBXContainerItemProxy */;
+			targetProxy = C7B8D20D28C9D7CB00A11174 /* PBXContainerItemProxy */;
 		};
 		C7B8E5AA28C5B8F60089BE7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -560,7 +576,7 @@
 			};
 			name = Release;
 		};
-		C7B8E59F28C5AFA70089BE7C /* Debug */ = {
+		C7B8D21028C9D7CB00A11174 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,7 +585,7 @@
 				DEVELOPMENT_TEAM = 9FXHBSH5SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thevibegod.BullsEyeGameTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thevibegod.BullsEyeGameControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -578,7 +594,7 @@
 			};
 			name = Debug;
 		};
-		C7B8E5A028C5AFA70089BE7C /* Release */ = {
+		C7B8D21128C9D7CB00A11174 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -587,7 +603,7 @@
 				DEVELOPMENT_TEAM = 9FXHBSH5SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thevibegod.BullsEyeGameTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thevibegod.BullsEyeGameControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -653,11 +669,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7B8E59E28C5AFA70089BE7C /* Build configuration list for PBXNativeTarget "BullsEyeGameTests" */ = {
+		C7B8D20F28C9D7CB00A11174 /* Build configuration list for PBXNativeTarget "BullsEyeGameControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7B8E59F28C5AFA70089BE7C /* Debug */,
-				C7B8E5A028C5AFA70089BE7C /* Release */,
+				C7B8D21028C9D7CB00A11174 /* Debug */,
+				C7B8D21128C9D7CB00A11174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -59,6 +59,16 @@
                ReferencedContainer = "container:BullsEye.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C7B8D20828C9D7CB00A11174"
+               BuildableName = "BullsEyeGameControllerTests.xctest"
+               BlueprintName = "BullsEyeGameControllerTests"
+               ReferencedContainer = "container:BullsEye.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
